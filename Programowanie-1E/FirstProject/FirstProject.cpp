@@ -48,4 +48,14 @@ int main()
     std::cout << 234.67 << "krowa mowa" << 74 << "\n";
 
 
-} 
+
+
+    std::cout << "podaj liczbe:\n";
+    int numberfromUser;
+    std::cin >> numberfromUser;
+    std::cout << "podanoz: " << numberfromUser << "\n";
+
+
+
+    
+}  
