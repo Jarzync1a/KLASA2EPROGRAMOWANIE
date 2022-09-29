@@ -54,8 +54,7 @@ int main()
     int numberfromUser;
     std::cin >> numberfromUser;
     std::cout << "podanoz: " << numberfromUser << "\n";
-
-
+                          
 
     
 }  
