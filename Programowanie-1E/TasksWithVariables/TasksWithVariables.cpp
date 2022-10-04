@@ -10,17 +10,19 @@ void task1()
 	std::cout << "Podaj druga liczbe:\n";
 	std::cin >> SecondNumber;
 
-	int sum, difference, product, quotient;
+	int sum, difference, product, quotient, rest;
 
 	sum = firstNumber + SecondNumber; 
 	difference = firstNumber - SecondNumber;
 	product = firstNumber * SecondNumber;
 	quotient = firstNumber / SecondNumber;
+	rest = firstNumber % SecondNumber;
 	
-	std::cout << "Suma " << sum << "\n";
-	std::cout << "Roznica " << difference << "\n";
-	std::cout << "Iloczyn " << product << "\n";
-	std::cout << "Iloraz " << quotient << "\n";
+	std::cout << "Suma: " << sum << "\n";
+	std::cout << "Roznica: " << difference << "\n";
+	std::cout << "Iloczyn: " << product << "\n";
+	std::cout << "Iloraz: " << quotient << "\n";
+	std::cout << "Reszta z dzielenia: " << rest << "\n";
 
 }
 int main()
