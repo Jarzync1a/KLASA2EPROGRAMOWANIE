@@ -25,9 +25,22 @@ void task1()
 	std::cout << "Reszta z dzielenia: " << rest << "\n";
 
 }
+
+void task2()
+{
+	std::cout << "15 / 4 = " << 15 / 4 << "\n";
+	std::cout << "15.0 / 4 = " << 15.0 / 4 << "\n";
+	std::cout << "15 / 4.0 = " << 15 / 4.0 << "\n";
+	std::cout << "15.0 / 4.0 = " << 15.0 / 4.0 << "\n";
+
+
+}
+
+
 int main()
 {
 	
-	task1();
+	//task1();
+	task2();
 
 }
