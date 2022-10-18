@@ -14,11 +14,16 @@ void task1()
 		std::cout << "Podaj druga liczbe:\n";
 		std::cin >> SecondNumber;
 
-		int quotient;
+		int quotient = 0;
 
-		quotient = firstNumber / SecondNumber;
+		if (SecondNumber != 0)
+			quotient = firstNumber / SecondNumber;
 
-		std::cout << "Iloraz: " << quotient << "\n";
+		if (SecondNumber != 0)
+			std::cout << "Iloraz: " << quotient << "\n";
+
+		if (SecondNumber == 0)
+			std::cout << "Dzielenie przez zero!!!\n";
 }
 
 int main()
