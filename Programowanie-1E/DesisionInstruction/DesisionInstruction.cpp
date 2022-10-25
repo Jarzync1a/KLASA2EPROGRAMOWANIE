@@ -1,6 +1,10 @@
 #include <iostream>
 
 /*
+DRY - Don't Repeat Yourself
+*/
+
+/*
 Napisz funkcje ktora wczyta dwie liczby i wykona dzielenie na nich 
 */
 
@@ -22,8 +26,10 @@ void task1()
 		if (SecondNumber != 0)
 			std::cout << "Iloraz: " << quotient << "\n";
 
-		if (SecondNumber == 0)
+		else
 			std::cout << "Dzielenie przez zero!!!\n";
+
+		std::cout << "koniec programu";
 }
 
 int main()
