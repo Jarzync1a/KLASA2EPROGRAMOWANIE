@@ -14,7 +14,15 @@ DRY - Don't Repeat Yourself
 * wieksze lub róne >=
 * mniejsze lub równe <=
 */
-
+/*
+	Operatory Logiczne
+	   	    and		      or		not
+A	B	  A && B		A || B	    !A
+F	F		F			  F			T
+F	T	    F			  T			T
+T	F	    F			  T			F
+T	T		T			  T			F
+*/
 
 /*
 Napisz funkcje ktora wczyta dwie liczby i wykona dzielenie na nich 
@@ -72,7 +80,7 @@ void task3()
 	std::cout << "Podaj liczbe do sprawdzenia:\n";
 	std::cin >> NumberToCheck2;
 
-	if (NumberToCheck2 >= 10)
+	/*if (NumberToCheck2 >= 10)
 	{
 		if (NumberToCheck2 <= 25)
 		{
@@ -87,10 +95,156 @@ void task3()
 	{
 		std::cout << "liczba nie znajduje sie w zakresie\n";
 	}
+}*/
+	if (NumberToCheck2 <= 10 && NumberToCheck2 >= 25)
+	{
+		std::cout << "liczba znajduje sie w zakresie\n";
+	}
+	else
+	{
+		std::cout << "liczba nie znajduje sie w zakresie\n";
+	}
 }
+	/*
+	Napisz funkcje która wczyta liczb i wyswietli infomacje czy jest ona parzysta czy nie 
+	*/
+
+	void task4()
+	{
+		int EvenNumber;
+
+		std::cout << "Podaj liczbe do sprawdzenia:\n";
+		std::cin >> EvenNumber;
+
+		if (EvenNumber % 2 == 0)
+		{
+			std::cout << "liczba jest parzysta";
+		}
+		else
+		{
+			std::cout << "liczba nie jest parzysta";
+		}
+	}
+
+	/*
+	Napisz funkcje która wczyta liczbe która bedzie bokiem kwadratu i wyswitli informacje o polu i obwodzie
+	*/
+
+	void task5()
+	{
+		int sideOfSquare;
+
+		std::cout << "Podaj bok kwadratu:\n";
+		std::cin >> sideOfSquare;
+		if (sideOfSquare > 0 )
+		{
+			int area;
+			area = sideOfSquare * sideOfSquare;
+
+			int circuit;
+			circuit = 4 * sideOfSquare;
+
+			std::cout << "pole kwadratu wynosi: " << area << "\n";
+			std::cout << "obwod kwadratu wynosi: " << circuit;
+		}
+		else
+		{
+			std::cout << "liczba jest ujemna lub rowna 0";
+		}
+	}
+
+	/*
+	Napisz funkcje która wczyta dwie liczny i wyswietli wieksz¹ z nich 
+	*/
+
+	void task6()
+	{
+		int firstNumber2, secondNumber2;
+
+			std::cout << "podaj pierwsza liczbe: ";
+			std::cin >> firstNumber2;
+
+			std::cout << "podaj druga liczbe: ";
+
+			std::cin >> secondNumber2;
+
+			if (firstNumber2 > secondNumber2)
+			{
+				std::cout << "wieksza liczba jest: " << firstNumber2;
+			}
+			else
+			{
+				std::cout << "wieksza liczba jest: " << secondNumber2;
+			}
+	}
+
+	/*
+	napisz funkcje która wczyta trzy liczby i wyœwitli najwieksz¹  z nich 
+	*/
+
+	void task7()
+	{
+		int oneNumber, twoNumber, threeNumber;
+		
+		std::cout << "podaj puierwsza liczbe; ";
+		std::cin >> oneNumber;
+
+		std::cout << "podaj druga liczbe; ";
+		std::cin >> twoNumber;
+
+		std::cout << "podaj trzecia liczbe; ";
+		std::cin >> threeNumber;
+
+		if (oneNumber > twoNumber && threeNumber)
+		{
+			std::cout << "nawieksza liczba to: " << oneNumber;
+		}
+
+		if (twoNumber > oneNumber && threeNumber)
+		{
+			std::cout << "nawieksza liczba to: " << twoNumber;
+		}
+
+		if (threeNumber > oneNumber && twoNumber)
+		{
+			std::cout << "nawieksza liczba to: " << twoNumber;
+		}
+	}
+
+	/*
+	Napisz funkcje która wczyta dwie liczby i wyswietli je w koolejnosci rosn¹cej 
+	*/
+
+	void task8()
+	{
+		int IncreasingNumber1, IncreasingNumber2;
+
+		std::cout << "podaj pierwsza liczbe: ";
+		std::cin >> IncreasingNumber1;
+
+		std::cout << "podaj druga liczbe: ";
+		std::cin >> IncreasingNumber2;
+
+		if (IncreasingNumber1 > IncreasingNumber1)
+		{
+			std::cout << "liczby w kolejnosci rosnacej: " << IncreasingNumber1  << IncreasingNumber2;
+		}
+		else
+		{
+			std::cout << "liczy w koljenosci rosnacej: " << IncreasingNumber2  << IncreasingNumber2;
+		}
+	}
 int main()
 {
 	//task1();
 	//task2();
-	task3();
+	//task3();
+	//task4();
+	//task5();
+	//task6();
+	//task7();
+	task8();
+	//task9();
+	//task10();
+	//task11();
 }
