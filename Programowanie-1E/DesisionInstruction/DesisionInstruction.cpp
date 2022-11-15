@@ -242,18 +242,27 @@ Napisz funkcjê, która wczyta trzy liczby i wyœwietli je w kolejnoœci rosn¹cej.
 */
 
 void task9()
+{
+
+}
 
 /*
 Napisz funkcjê, która wczyta numer dnia tygodnia i wyœwietli nazwê tego dnia.
 */
 
 void task10()
+{
+
+}
 
 /*
 Napisz funkcjê, która wczyta wspó³czynniki równania kwadratowego i wyœwietli pierwiastki tego równania
 */
 
 void task11()
+{
+
+}
 
 /*
 Napisz funkcjê, która wyœwietli komunikaty "gor¹co", "ciep³o", "zimno", "bardzo zimno"
@@ -262,6 +271,9 @@ Zakresy : powy¿ej 30, 15 - 30, 0 - 15 i poni¿ej 0.
 */
 
 void task12()
+{
+
+}
 
 int main()
 {
@@ -273,7 +285,7 @@ int main()
 	//task6();
 	//task7();
 	//task8();
-	task9();
+	  cfgfgf task9();
 	//task10();
 	//task11();
 	//task12();
