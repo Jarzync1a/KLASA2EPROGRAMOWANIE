@@ -252,8 +252,40 @@ Napisz funkcjê, która wczyta numer dnia tygodnia i wyœwietli nazwê tego dnia.
 
 void task10()
 {
+	int dayNumber;
 
+	std::cout << "Podaj liczbe zeby wyswietlic dzien tygodnia: ";
+	std::cin >> dayNumber;
+
+		switch (dayNumber)
+		{
+		case 1:
+			std::cout << "Poniedzialek";
+			break;
+		case 2:
+			std::cout << "Wtorek";
+			break;
+		case 3:
+			std::cout << "Sroda";
+			break;
+		case 4:
+			std::cout << "Czwartek";
+			break;
+		case 5:
+			std::cout << "Piatek";
+			break;
+		case 6:
+			std::cout << "Sobota";
+			break;
+		case 0:
+		case 7:
+			std::cout << "Niedizela";
+			break;
+		default: std::cout << "Bledny Dzien";
+			break;
+		}
 }
+
 
 /*
 Napisz funkcjê, która wczyta wspó³czynniki równania kwadratowego i wyœwietli pierwiastki tego równania
@@ -272,11 +304,24 @@ Zakresy : powy¿ej 30, 15 - 30, 0 - 15 i poni¿ej 0.
 
 void task12()
 {
+	int temperature;
+		std::cout << "Podaj temperaturê do sprawdzenia: ";
+		std::cin >> temperature;
 
+		if (temperature > 30)
+			std::cout << "gor¹co";
+		else if (temperature >= 15 && temperature <= 30)
+			std::cout << "ciep³o";
+		else if (temperature < 15 && temperature >= 0)
+			std::cout << "zimno";
+		else if (temperature < 0)
+		std::cout << "bardzo zimno";
 }
 
 int main()
 {
+
+	setlocale(LC_CTYPE, "polish");
 	//task1();
 	//task2();
 	//task3();
@@ -285,7 +330,7 @@ int main()
 	//task6();
 	//task7();
 	//task8();
-	  cfgfgf task9();
+	//task9();
 	//task10();
 	//task11();
 	//task12();
