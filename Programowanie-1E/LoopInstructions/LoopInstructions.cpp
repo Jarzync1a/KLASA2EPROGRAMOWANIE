@@ -28,12 +28,20 @@ void task2()
 
 	int currentNumber = lowRange;
 
-	do
+	/*do
 	{
 		std::cout << currentNumber << ", " ;
 		currentNumber++;
 	} while (currentNumber != highRange + 1);
-}
+	*/
+
+	while (currentNumber <= highRange)
+	{
+		std::cout << currentNumber << ", ";
+		currentNumber++;	
+	}
+	std::cout << "\nTa linijka jest poza pêtl¹\n";
+	}
 
 void task3()
 {
@@ -63,12 +71,15 @@ void task3()
 	std::cout << "Gratulacje";
 }
 
+void task4()
+{
 
+}
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
 
 	//task1();
-	//task2();
-	task3();
+	task2();
+	//task3();
 }
