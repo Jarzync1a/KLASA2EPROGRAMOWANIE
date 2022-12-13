@@ -107,13 +107,60 @@ void task5()
 	}
 	*/
 
-	for (int i = 2;(i <= numberFromUser); i++;)
+	for (int i = 2;(i <= numberFromUser); i++)
 	{
 		result = result * i;
 		i++;
 	}
 	std::cout << numberFromUser << "! =" << result << "\n";
 	
+}
+
+/*
+wczytac napis od urzytkowniaka i wyœwietluiæ ile jest liter w wyrazie.
+*/
+void task6()
+{
+	std::string textFromUser;
+	std::cout << "Podaj wyraz: ";
+	std::cin >> textFromUser;
+
+	std::cout << "Urzytkownik poda³: " << textFromUser << "\n";
+	std::cout << "Napis sk³ada sie z: " << textFromUser.length() << " znaków \n";
+	std::cout << "Pierwszy znak z napisu: : " << textFromUser[0] << "\n";
+	std::cout << "Ostatni znak napisu to: " << textFromUser[textFromUser.length() - 1] << "\n";
+
+	int coutChar = 0;
+	
+	for (int i = 0; i < textFromUser.length(); i++)
+	{
+		if (textFromUser[i] == 'a')
+			coutChar++;
+	}
+	
+	std::cout << "Znakow 'a' jest: " << coutChar << "\n";
+}
+
+/*
+Zadanie
+Napisz funkcje, która wczyta i zamieni du¿e litery na ma³e a ma³e litery na du¿e a wszytkie pozosta³e znaki pozostawi nie zmienione.
+*/
+
+void task7()
+{
+	std::string textFromUser;
+	std::cout << "Podaj wyraz: ";
+	std::cin >> textFromUser;
+
+	for (int i = 0; i < textFromUser.length(); i++)
+	{
+		if (textFromUser[i] >= 'A' && textFromUser[i] <= 'Z')
+			textFromUser[i] = textFromUser[i] + 32;
+		else if (textFromUser[i] >= 'A' && textFromUser[i] <= 'Z')
+			textFromUser[i] = textFromUser[i] - 32;
+	}
+
+	std::cout << "Napis po zminie: " << textFromUser << "\n";
 }
 
 int main()
@@ -124,5 +171,7 @@ int main()
 	//task2();
 	//task3();
 	//task4();
-	task5();
+	//task5();
+	//task6();
+	task7();
 }
