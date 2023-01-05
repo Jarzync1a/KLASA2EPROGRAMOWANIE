@@ -1,7 +1,8 @@
-#include <iostream>
+ï»¿#include <iostream>
+#include <string>
 
 /*
-Napisz funkcje która pobierze liczbe dodatnia do skutku.
+Napisz funkcje ktÃ³ra pobierze liczbe dodatnia do skutku.
 */
 
 void task1()
@@ -10,11 +11,11 @@ void task1()
 
 	do
 	{
-		std::cout << "podaj liczbê dodatni¹:\n ";
+		std::cout << "podaj liczbÄ™ dodatniÄ…:\n ";
 		std::cin >> number;
 	} while (number <= 0);
 
-	std::cout << "poda³eœ liczbe dodatni¹: " << number << "\n";
+	std::cout << "podaÅ‚eÅ› liczbe dodatniÄ…: " << number << "\n";
 }
 
 
@@ -23,7 +24,7 @@ void task2()
 	int lowRange, highRange;
 	std::cout << "Podaj zakres dolny: ";
 	std::cin >> lowRange;
-	std::cout << "Podaj zakres górny: ";
+	std::cout << "Podaj zakres gÃ³rny: ";
 	std::cin >> highRange;
 
 	int currentNumber = lowRange;
@@ -40,7 +41,7 @@ void task2()
 		std::cout << currentNumber << ", ";
 		currentNumber++;
 	}
-	std::cout << "\nTa linijka jest poza pêtl¹\n";
+	std::cout << "\nTa linijka jest poza pÄ™tlÄ…\n";
 }
 
 void task3()
@@ -61,10 +62,10 @@ void task3()
 		std::cin >> numberFromUser;
 
 		if (numberFromUser > randomNumber)
-			std::cout << "liczba jest za du¿a \n";
+			std::cout << "liczba jest za duÅ¼a \n";
 
 		if (numberFromUser < randomNumber)
-			std::cout << "liczba jest za ma³a \n";
+			std::cout << "liczba jest za maÅ‚a \n";
 
 	} while (numberFromUser != randomNumber);
 
@@ -74,9 +75,9 @@ void task3()
 void task4()
 {
 	int firstNumber, secondNumber;
-	std::cout << "podaj pierwsz¹ liczbê do wskazania NWD:";
+	std::cout << "podaj pierwszÄ… liczbÄ™ do wskazania NWD:";
 	std::cin >> firstNumber;
-	std::cout << "podaj drug¹ liczbê do wskazania NWD:";
+	std::cout << "podaj drugÄ… liczbÄ™ do wskazania NWD:";
 	std::cin >> secondNumber;
 
 	int a = firstNumber;
@@ -117,7 +118,7 @@ void task5()
 }
 
 /*
-wczytac napis od urzytkowniaka i wyœwietluiæ ile jest liter w wyrazie.
+wczytac napis od urzytkowniaka i wyÅ›wietluiÄ‡ ile jest liter w wyrazie.
 */
 void task6()
 {
@@ -125,8 +126,8 @@ void task6()
 	std::cout << "Podaj wyraz: ";
 	std::cin >> textFromUser;
 
-	std::cout << "Urzytkownik poda³: " << textFromUser << "\n";
-	std::cout << "Napis sk³ada sie z: " << textFromUser.length() << " znaków \n";
+	std::cout << "Urzytkownik podaÅ‚: " << textFromUser << "\n";
+	std::cout << "Napis skÅ‚ada sie z: " << textFromUser.length() << " znakÃ³w \n";
 	std::cout << "Pierwszy znak z napisu: : " << textFromUser[0] << "\n";
 	std::cout << "Ostatni znak napisu to: " << textFromUser[textFromUser.length() - 1] << "\n";
 
@@ -143,7 +144,7 @@ void task6()
 
 /*
 Zadanie
-Napisz funkcje, która wczyta i zamieni du¿e litery na ma³e a ma³e litery na du¿e a wszytkie pozosta³e znaki pozostawi nie zmienione.
+Napisz funkcje, ktÃ³ra wczyta i zamieni duÅ¼e litery na maÅ‚e a maÅ‚e litery na duÅ¼e a wszytkie pozostaÅ‚e znaki pozostawi nie zmienione.
 */
 
 void task7()
@@ -163,6 +164,25 @@ void task7()
 	std::cout << "Napis po zminie: " << textFromUser << "\n";
 }
 
+void task8()
+{
+	int numberFromUser;
+	std::string textFromUser;
+	bool isAllDigit;
+	do
+	{
+		std::cout << "Podaj liczbÃª\n";
+		//std::cin >> textFromUser;
+		std::getline(std::cin, textFromUser);
+
+		isAllDigit = true;
+		//sprawdziÃ¦ czy tak nie jest
+
+	} while (isAllDigit == false);//(uÂ¿ytkownik nie podaÂ³ liczby);
+
+	std::cout << "Uzytkownik podaÂ³ " << textFromUser << "\n";
+}
+
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
@@ -173,5 +193,6 @@ int main()
 	//task4();
 	//task5();
 	//task6();
-	task7();
+	//task7();
+	//task8();
 }
