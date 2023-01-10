@@ -1,5 +1,6 @@
 #define _USE_MATH_DEFINES
 #include <iostream>
+#include <string>
 
 //LotOfTasks
 
@@ -128,30 +129,101 @@ void task8()
 Instrukcja If: */
 void task9()
 {
-    int 
+    
 }
 
 /*
 10. Program sprawdzaj¹cy czy podana liczba jest parzysta czy nieparzysta */
 void task10()
 {
+    int evenNumber;
 
+    std::cout << "Podaj liczbe do sprawdzenia:";
+    std::cin >> evenNumber;
+
+    if (evenNumber % 2 == 0)
+        std::cout << "Liczba jest parzysta";
+    else
+        std::cout << "Liczba nie jest parzysta";
 }
 
 /*
 11. Program sprawdzaj¹cy czy podana liczba jest dodatnia, ujemna czy równa zero */
 void task11()
 {
+    int numberToCheck;
+
+    std::cout << "Podaj liczbe do sprawdzenia:";
+    std::cin >> numberToCheck;
+
+    if (numberToCheck == 0)
+        std::cout << "Liczba jest równa zero";
+    else if (numberToCheck > 0)
+        std::cout << "Liczba jest dodatnia";
+    else if (numberToCheck < 0)
+        std::cout << "Liczba jest ujemna";
+}
+
+/*
+12. Program sprawdzaj¹cy czy podany rok jest rokiem przestêpnym */
+void task12()
+{
 
 }
 
 /*
-12. Program sprawdzaj¹cy czy podany rok jest rokiem przestêpnym
-13. Program wyœwietlaj¹cy odpowiedni komunikat w zale¿noœci od podanej oceny (np. "bardzo dobry" dla oceny 5, "dobry" dla oceny 4 itd.)
-14. Program sprawdzaj¹cy czy podane has³o jest poprawne (np. jeœli has³o jest "abc123", program powinien wyœwietliæ "has³o poprawne", jeœli jest inne, powinien wyœwietliæ "has³o niepoprawne").
-15.Program sprawdzaj¹cy czy podana data jest poprawna (np. sprawdzaj¹c, czy dzieñ jest z zakresu od 1 do 31, miesi¹c od 1 do 12 itd.)
+13. Program wyœwietlaj¹cy odpowiedni komunikat w zale¿noœci od podanej oceny (np. "bardzo dobry" dla oceny 5, "dobry" dla oceny 4 itd.) */
+void task13()
+{
+    int ratingToCheck;
+
+    std::cout << "Podaj ocenê:";
+    std::cin >> ratingToCheck;
+
+    if (ratingToCheck == 1)
+        std::cout << "niedostateczny";
+    else if (ratingToCheck == 2)
+        std::cout << "dopuszczaj¹cy";
+    else if (ratingToCheck == 3)
+        std::cout << "dostateczny";
+    else if (ratingToCheck == 4)
+        std::cout << "dobry";
+    else if (ratingToCheck == 5)
+        std::cout << "bardzo dobry";
+    else if (ratingToCheck == 6)
+        std::cout << "celuj¹cy";
+}
+
+/*
+14. Program sprawdzaj¹cy czy podane has³o jest poprawne (np. jeœli has³o jest "abc123", program powinien wyœwietliæ "has³o poprawne", jeœli jest inne, powinien wyœwietliæ "has³o niepoprawne"). */
+void task14()
+{
+    std::string passwordToCheck;
+    std::cout << "Podaj has³o:";
+    std::cin >> passwordToCheck;
+
+    if (passwordToCheck == "abc123")
+        std::cout << "Poda³eœ w³aœciwe has³o";
+    else
+        std::cout << "Poda³eœ nie w³aœciwe has³o";
+}
+
+/*
+15.Program sprawdzaj¹cy czy podana data jest poprawna (np. sprawdzaj¹c, czy dzieñ jest z zakresu od 1 do 31, miesi¹c od 1 do 12 itd.) */
+void task15()
+{
+
+}
+
+/*
 16. Program wyœwietlaj¹cy odpowiedni komunikat w zale¿noœci od podanej temperatury (np. "ciep³o" dla temperatury powy¿ej 20 stopni Celsjusza, "ch³odno" dla temperatury poni¿ej 10 stopni Celsjusza itd.)
-Pêtle:
+Pêtle: */
+void task16()
+{
+
+}
+
+/*
 17. Program sprawdzaj¹cy czy podana liczba jest liczb¹ pierwsz¹ (czyli tak¹, która dzieli siê tylko przez 1 i przez siebie sam¹)
 18. Program sprawdzaj¹cy czy podany ci¹g znaków jest palindromem (czyli takim, który czytany od ty³u jest taki sam, jak czytany od przodu, np. "kajak")
 19. Program sprawdzaj¹cy czy podane dwa s³owa s¹ anagramami (czyli takimi, które zawieraj¹ te same litery, ale w innym uk³adzie, np. "klasa" i "salka")
@@ -197,13 +269,13 @@ int main()
     //task5();
     //task6();
     //task7();
-    task8();
-    //task9();
+    //task8();
+    //task9(); -
     //task10();
     //task11();
-    //task12();
+    //task12(); -
     //task13();
-    //task14();
+    task14();
     //task15();
     //task16();
     //task17();
