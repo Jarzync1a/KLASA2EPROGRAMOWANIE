@@ -212,11 +212,11 @@ void task14()
 15.Program sprawdzaj¹cy czy podana data jest poprawna (np. sprawdzaj¹c, czy dzieñ jest z zakresu od 1 do 31, miesi¹c od 1 do 12 itd.) */
 void task15()
 {
-
 }
 
 /*
-16. Program wyœwietlaj¹cy odpowiedni komunikat w zale¿noœci od podanej temperatury (np. "ciep³o" dla temperatury powy¿ej 20 stopni Celsjusza, "ch³odno" dla temperatury poni¿ej 10 stopni Celsjusza itd.)
+16. Program wyœwietlaj¹cy odpowiedni komunikat w zale¿noœci od podanej temperatury (np. "ciep³o" dla temperatury
+powy¿ej 20 stopni Celsjusza, "ch³odno" dla temperatury poni¿ej 10 stopni Celsjusza itd.)
 Pêtle: */
 void task16()
 {
@@ -224,14 +224,57 @@ void task16()
 }
 
 /*
-17. Program sprawdzaj¹cy czy podana liczba jest liczb¹ pierwsz¹ (czyli tak¹, która dzieli siê tylko przez 1 i przez siebie sam¹)
-18. Program sprawdzaj¹cy czy podany ci¹g znaków jest palindromem (czyli takim, który czytany od ty³u jest taki sam, jak czytany od przodu, np. "kajak")
-19. Program sprawdzaj¹cy czy podane dwa s³owa s¹ anagramami (czyli takimi, które zawieraj¹ te same litery, ale w innym uk³adzie, np. "klasa" i "salka")
+17. Program sprawdzaj¹cy czy podana liczba jest liczb¹ pierwsz¹ (czyli tak¹, która dzieli siê tylko przez 1 i przez siebie sam¹) */
+void task17()
+{
+
+}
+
+/*
+18. Program sprawdzaj¹cy czy podany ci¹g znaków jest palindromem (czyli takim, który czytany od ty³u jest taki sam, jak
+czytany od przodu, np. "kajak") */
+void task18()
+{
+
+}
+
+/*
+19. Program sprawdzaj¹cy czy podane dwa s³owa s¹ anagramami (czyli takimi, które zawieraj¹ te same litery, ale w innym uk³adzie, np. "klasa" i "salka") */
+void task19()
+{
+
+}
+
+/*
 20. Program sprawdzaj¹cy czy podana liczba jest liczb¹ doskona³¹ (czyli tak¹, której suma dzielników (z wy³¹czeniem samej siebie) jest równa danej liczbie, np. 6 jest liczb¹ doskona³¹, poniewa¿ 1 + 2 + 3 = 6).
-Pêtla for:
-21. Program wyœwietlaj¹cy na ekranie kolejne liczby naturalne od 1 do 10
-22. Program obliczaj¹cy sumê liczb od 1 do 100
-23. Program wyœwietlaj¹cy na ekranie kwadraty liczb od 1 do 10 (np. 1, 4, 9, 16 itd.)
+Pêtla for: */
+void task20()
+{
+
+}
+
+/*
+21. Program wyœwietlaj¹cy na ekranie kolejne liczby naturalne od 1 do 10 */
+void task21()
+{
+
+}
+
+/*
+22. Program obliczaj¹cy sumê liczb od 1 do 100 */
+void task22()
+{
+
+}
+
+/*
+23. Program wyœwietlaj¹cy na ekranie kwadraty liczb od 1 do 10 (np. 1, 4, 9, 16 itd.) */
+void task23()
+{
+
+}
+
+/*
 24. Program wyœwietlaj¹cy na ekranie silnie z liczb od 1 do 10 (np. 1!, 2!, 3!, 4! itd.)
 25. Program wyœwietlaj¹cy na ekranie tabliczkê mno¿enia od 1 do 9 (np. 1x1=1, 1x2=2, 1x3=3 itd.).
 26. Program wyœwietlaj¹cy na ekranie wszystkie liczby podzielne przez 3 z zakresu od 1 do 100
@@ -270,15 +313,15 @@ int main()
     //task6();
     //task7();
     //task8();
-    //task9(); -
+    //task9(); 
     //task10();
     //task11();
-    //task12(); -
+    //task12(); 
     //task13();
-    task14();
-    //task15();
+    //task14();
+    //task15(); 
     //task16();
-    //task17();
+    //ask17(); 
     //task18();
     //task19();
     //task20();
