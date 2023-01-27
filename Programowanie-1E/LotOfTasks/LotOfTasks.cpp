@@ -6,6 +6,58 @@
 
 /*
 Podstawy programowania:
+1. Program obliczaj¹cy œredni¹ arytmetyczn¹ dwóch liczb.
+2. Program obliczaj¹cy pole prostok¹ta.
+3. Program obliczaj¹cy objêtoœæ sto¿ka.
+4. Program obliczaj¹cy pole ko³a.
+5. Program obliczaj¹cy wartoœæ wyra¿enia a^2 + b^2
+6. Program obliczaj¹cy pole trójk¹ta o podstawie b i wysokoœci h
+7. Program obliczaj¹cy objêtoœæ kuli o promieniu r
+8. Program obliczaj¹cy pole trapezu o podstawach a i b oraz wysokoœci h
+9. Program obliczaj¹cy œredni¹ wa¿on¹ trzech liczb z podanymi odpowiednimi wagami w1, w2 i w3.
+Instrukcja If:
+1. Program sprawdzaj¹cy czy podana liczba jest parzysta czy nieparzysta
+2. Program sprawdzaj¹cy czy podana liczba jest dodatnia, ujemna czy równa zero
+3. Program sprawdzaj¹cy czy podany rok jest rokiem przestêpnym
+4. Program wyœwietlaj¹cy odpowiedni komunikat w zale¿noœci od podanej oceny (np. "bardzo dobry" dla oceny 5, "dobry" dla oceny 4 itd.)
+5. Program sprawdzaj¹cy czy podane has³o jest poprawne (np. jeœli has³o jest "abc123", program powinien wyœwietliæ "has³o poprawne", jeœli jest inne, powinien wyœwietliæ "has³o niepoprawne").
+6. Program sprawdzaj¹cy czy podana data jest poprawna (np. sprawdzaj¹c, czy dzieñ jest z zakresu od 1 do 31, miesi¹c od 1 do 12 itd.)
+7. Program wyœwietlaj¹cy odpowiedni komunikat w zale¿noœci od podanej temperatury (np. "ciep³o" dla temperatury powy¿ej 20 stopni Celsjusza, "ch³odno" dla temperatury poni¿ej 10 stopni Celsjusza itd.)
+Pêtle:
+1. Program sprawdzaj¹cy czy podana liczba jest liczb¹ pierwsz¹ (czyli tak¹, która dzieli siê tylko przez 1 i przez siebie sam¹)
+2. Program sprawdzaj¹cy czy podany ci¹g znaków jest palindromem (czyli takim, który czytany od ty³u jest taki sam, jak czytany od przodu, np. "kajak")
+3. Program sprawdzaj¹cy czy podane dwa s³owa s¹ anagramami (czyli takimi, które zawieraj¹ te same litery, ale w innym uk³adzie, np. "klasa" i "salka")
+4. Program sprawdzaj¹cy czy podana liczba jest liczb¹ doskona³¹ (czyli tak¹, której suma dzielników (z wy³¹czeniem samej siebie) jest równa danej liczbie, np. 6 jest liczb¹ doskona³¹, poniewa¿ 1 + 2 + 3 = 6).
+Pêtla for:
+1. Program wyœwietlaj¹cy na ekranie kolejne liczby naturalne od 1 do 10
+2. Program obliczaj¹cy sumê liczb od 1 do 100
+3. Program wyœwietlaj¹cy na ekranie kwadraty liczb od 1 do 10 (np. 1, 4, 9, 16 itd.)
+4. Program wyœwietlaj¹cy na ekranie silnie z liczb od 1 do 10 (np. 1!, 2!, 3!, 4! itd.)
+5. Program wyœwietlaj¹cy na ekranie tabliczkê mno¿enia od 1 do 9 (np. 1x1=1, 1x2=2, 1x3=3 itd.).
+6. Program wyœwietlaj¹cy na ekranie wszystkie liczby podzielne przez 3 z zakresu od 1 do 100
+7. Program obliczaj¹cy sumê kwadratów liczb od 1 do 10
+8. Program wyœwietlaj¹cy na ekranie ci¹g Fibonacciego do 20 elementu (ci¹g Fibonacciego to ci¹g gdzie ka¿dy element jest sum¹ dwóch poprzednich, np. 0, 1, 1, 2, 3, 5, 8, 13 itd.)
+9. Program wyœwietlaj¹cy na ekranie kolejne potêgi 2 od 2^0 do 2^10 (np. 2^0, 2^1, 2^2 itd.)
+10. Program wyœwietlaj¹cy na ekranie kolejne elementy ci¹gu a_n = a_{n-1} + a_{n-2}, gdzie a_0=1, a_1=1 (ci¹g ten zaczyna siê od 1, 1, 2, 3, 5, 8, 13 itd.).
+Pêtla do-while:
+1. Program pytaj¹cy u¿ytkownika o has³o i wyœwietlaj¹cy komunikat "has³o poprawne" lub "has³o niepoprawne" dopóki u¿ytkownik nie poda poprawnego has³a (np. "abc123").
+2. Program wyœwietlaj¹cy na ekranie kwadraty liczb od 1 do 10 (np. 1, 4, 9, 16 itd.) dopóki suma tych kwadratów nie przekroczy 1000.
+Trudniejsze zadania:
+1. Program implementuj¹cy algorytm szyfrowania Cezara (proste szyfrowanie, w którym ka¿dy znak w tekœcie jest zastêpowany innym znakiem, przesuniêtym o sta³¹ liczbê pozycji w alfabecie).
+2. Program obliczaj¹cy najwiêkszy wspólny dzielnik (NWD) dwóch liczb
+3. Program obliczaj¹cy najmniejsz¹ wspóln¹ wielokrotnoœæ (NWW) dwóch liczb.
+4. Program wyci¹gaj¹cy informacje z numeru PESEL
+5. Napisz program, który pobiera od u¿ytkownika ci¹g znaków i wyœwietla liczbê samog³osek i spó³g³osek w tym ci¹gu.
+Dla zaawansowanych:
+1. Program implementuj¹cy algorytm generowania liczb pseudolosowych (np. algorytm Mersenne Twister).
+2. Algorytm szyfrowania AtBash Cipher - algorytm szyfruj¹cy, w którym ka¿da litera jest zamieniana na literê z przeciwnej strony alfabetu (np. A na Z, B na Y itd.)
+3. Algorytm szyfrowania Morse'a - algorytm szyfruj¹cy, w którym ka¿da litera w tekœcie jest zamieniana na ci¹g znaków "+" i "-", zgodny z kodem Morse'a.
+4. Napisz program, który pobiera od u¿ytkownika dwie macierze kwadratowe o takim samym rozmiarze i wyœwietla ich iloczyn.
+5. Program który na wejœciu przyjmie równanie a na wyjœciu da równanie w odwrotnej notacji polskiej ONP. Np. na wejœciu 2+3*4 na wyjœcu da 234*+
+6. Program, który na wejœciu przyjmie rówanie w ONP a na wyjœciu wyœwietli wynik rówania.
+7. Napisz grê kó³ko i krzy¿yk.
+/*
+Podstawy programowania:
 1. Program obliczaj¹cy œredni¹ arytmetyczn¹ dwóch liczb. */
 void task1()
 {
@@ -129,12 +181,29 @@ void task8()
 Instrukcja If: */
 void task9()
 {
-    
+    float firstNummber, secondNumber, thirdNumber, firstWeight, secondWeight, thirdWeight;
+
+    std::cout << "Podaj pierwsz¹ liczbê:";
+    std::cin >> firstNummber;
+    std::cout << "Podaj watgê pierwszej liczby:";
+    std::cin >> firstWeight;
+
+    std::cout << "Podaj drug¹ liczbe:";
+    std::cin >> secondNumber;
+    std::cout << "podaj wagê drugiej liczby:";
+    std::cin >> secondWeight;
+
+    std::cout << "Podaj trzeci¹ liczbe:";
+    std::cin >> thirdNumber;
+    std::cout << "Podaj wagê trzeciej liczby:";
+    std::cin >> thirdWeight;
+
+    std::cout << "œrednia wa¿ona podanych trzech liczb jest równa:" << (firstNummber * firstWeight + secondNumber * secondWeight + thirdNumber * thirdWeight) / (firstWeight + secondWeight + thirdWeight);
 }
 
 /*
 10. Program sprawdzaj¹cy czy podana liczba jest parzysta czy nieparzysta */
-void task10()
+void iftask1()
 {
     int evenNumber;
 
@@ -149,7 +218,7 @@ void task10()
 
 /*
 11. Program sprawdzaj¹cy czy podana liczba jest dodatnia, ujemna czy równa zero */
-void task11()
+void iftask2()
 {
     int numberToCheck;
 
@@ -166,14 +235,14 @@ void task11()
 
 /*
 12. Program sprawdzaj¹cy czy podany rok jest rokiem przestêpnym */
-void task12()
+void iftask3()
 {
 
 }
 
 /*
 13. Program wyœwietlaj¹cy odpowiedni komunikat w zale¿noœci od podanej oceny (np. "bardzo dobry" dla oceny 5, "dobry" dla oceny 4 itd.) */
-void task13()
+void iftask4()
 {
     int ratingToCheck;
 
@@ -196,7 +265,7 @@ void task13()
 
 /*
 14. Program sprawdzaj¹cy czy podane has³o jest poprawne (np. jeœli has³o jest "abc123", program powinien wyœwietliæ "has³o poprawne", jeœli jest inne, powinien wyœwietliæ "has³o niepoprawne"). */
-void task14()
+void iftask5()
 {
     std::string passwordToCheck;
     std::cout << "Podaj has³o:";
@@ -210,24 +279,53 @@ void task14()
 
 /*
 15.Program sprawdzaj¹cy czy podana data jest poprawna (np. sprawdzaj¹c, czy dzieñ jest z zakresu od 1 do 31, miesi¹c od 1 do 12 itd.) */
-void task15()
+void iftask6()
 {
+    int day, month, year;
+
+    std::cout << "Podaj dzieñ, miesi¹c, rok:";
+    std::cin >> day >> month >> year;
+
+
+    if (day >= 1 && day <= 31 && month >= 1 && month <=12 )
+        std::cout << "Podana data to:" << day << "." << month << ".";
+    else
+        std::cout << "Poda³eœ nie poprawn¹ date";
+
 }
 
 /*
 16. Program wyœwietlaj¹cy odpowiedni komunikat w zale¿noœci od podanej temperatury (np. "ciep³o" dla temperatury
 powy¿ej 20 stopni Celsjusza, "ch³odno" dla temperatury poni¿ej 10 stopni Celsjusza itd.)
 Pêtle: */
-void task16()
+void iftask7()
 {
+    int temperature;
 
+    std::cout << "Podaj temperature:";
+    std::cin >> temperature;
+
+    do
+    {
+        if (temperature >= 20)
+            std::cout << "ciep³o";
+        else if (temperature <= 10)
+            std::cout << "zimno";
+        else if (temperature > 10 || temperature < 20)
+            std::cout << "letnio";
+    } while (temperature >= 20 || temperature <= 19 );
 }
 
 /*
 17. Program sprawdzaj¹cy czy podana liczba jest liczb¹ pierwsz¹ (czyli tak¹, która dzieli siê tylko przez 1 i przez siebie sam¹) */
 void task17()
 {
+    int firstNumber;
 
+    std::cout << "Podaj liczbê: ";
+    std::cin >> firstNumber;
+
+    if (firstNumber / 1 && firstNumber);
 }
 
 /*
@@ -274,32 +372,6 @@ void task23()
 
 }
 
-/*
-24. Program wyœwietlaj¹cy na ekranie silnie z liczb od 1 do 10 (np. 1!, 2!, 3!, 4! itd.)
-25. Program wyœwietlaj¹cy na ekranie tabliczkê mno¿enia od 1 do 9 (np. 1x1=1, 1x2=2, 1x3=3 itd.).
-26. Program wyœwietlaj¹cy na ekranie wszystkie liczby podzielne przez 3 z zakresu od 1 do 100
-27. Program obliczaj¹cy sumê kwadratów liczb od 1 do 10
-28. Program wyœwietlaj¹cy na ekranie ci¹g Fibonacciego do 20 elementu (ci¹g Fibonacciego to ci¹g gdzie ka¿dy element jest sum¹ dwóch poprzednich, np. 0, 1, 1, 2, 3, 5, 8, 13 itd.)
-29. Program wyœwietlaj¹cy na ekranie kolejne potêgi 2 od 2^0 do 2^10 (np. 2^0, 2^1, 2^2 itd.)
-30. Program wyœwietlaj¹cy na ekranie kolejne elementy ci¹gu a_n = a_{n-1} + a_{n-2}, gdzie a_0=1, a_1=1 (ci¹g ten zaczyna siê od 1, 1, 2, 3, 5, 8, 13 itd.).
-Pêtla do-while:
-31. Program pytaj¹cy u¿ytkownika o has³o i wyœwietlaj¹cy komunikat "has³o poprawne" lub "has³o niepoprawne" dopóki u¿ytkownik nie poda poprawnego has³a (np. "abc123").
-32. Program wyœwietlaj¹cy na ekranie kwadraty liczb od 1 do 10 (np. 1, 4, 9, 16 itd.) dopóki suma tych kwadratów nie przekroczy 1000.
-Trudniejsze zadania:
-33. Program implementuj¹cy algorytm szyfrowania Cezara (proste szyfrowanie, w którym ka¿dy znak w tekœcie jest zastêpowany innym znakiem, przesuniêtym o sta³¹ liczbê pozycji w alfabecie).
-34. Program obliczaj¹cy najwiêkszy wspólny dzielnik (NWD) dwóch liczb
-35. Program obliczaj¹cy najmniejsz¹ wspóln¹ wielokrotnoœæ (NWW) dwóch liczb.
-36. Program wyci¹gaj¹cy informacje z numeru PESEL
-37. Napisz program, który pobiera od u¿ytkownika ci¹g znaków i wyœwietla liczbê samog³osek i spó³g³osek w tym ci¹gu.
-Dla zaawansowanych:
-38. Program implementuj¹cy algorytm generowania liczb pseudolosowych (np. algorytm Mersenne Twister).
-39. Algorytm szyfrowania AtBash Cipher - algorytm szyfruj¹cy, w którym ka¿da litera jest zamieniana na literê z przeciwnej strony alfabetu (np. A na Z, B na Y itd.)
-40. Algorytm szyfrowania Morse'a - algorytm szyfruj¹cy, w którym ka¿da litera w tekœcie jest zamieniana na ci¹g znaków "+" i "-", zgodny z kodem Morse'a.
-41. Napisz program, który pobiera od u¿ytkownika dwie macierze kwadratowe o takim samym rozmiarze i wyœwietla ich iloczyn.
-42. Program który na wejœciu przyjmie równanie a na wyjœciu da równanie w odwrotnej notacji polskiej ONP. Np. na wejœciu 2+3*4 na wyjœcu da 234*+
-43. Program, który na wejœciu przyjmie rówanie w ONP a na wyjœciu wyœwietli wynik rówania.
-44. Napisz grê kó³ko i krzy¿yk.
-*/
 
 int main()
 {
@@ -311,17 +383,17 @@ int main()
     //task4();
     //task5();
     //task6();
-    //task7();
+    task7();
     //task8();
     //task9(); 
     //task10();
     //task11();
-    //task12(); 
+    //task12(); -
     //task13();
     //task14();
-    //task15(); 
-    //task16();
-    //ask17(); 
+    //task15(); -
+    //task16(); -
+    //task17(); 
     //task18();
     //task19();
     //task20();
