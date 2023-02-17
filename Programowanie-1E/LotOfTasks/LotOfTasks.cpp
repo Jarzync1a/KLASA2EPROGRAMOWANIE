@@ -282,16 +282,46 @@ void iftask5()
 void iftask6()
 {
     int day, month, year;
-
-    std::cout << "Podaj dzieñ, miesi¹c, rok:";
+    std::cout << "Podaj dzieñ, miesi¹c i rok\n";
     std::cin >> day >> month >> year;
 
+    if (day < 1 || month < 1 || year == 0)
+    {
+        std::cout << "B³êdna data\n";
+        return;
+    }
 
-    if (day >= 1 && day <= 31 && month >= 1 && month <=12 )
-        std::cout << "Podana data to:" << day << "." << month << ".";
-    else
-        std::cout << "Poda³eœ nie poprawn¹ date";
+    if (month > 12)
+    {
+        std::cout << "B³êdny miesi¹c (za du¿y)\n";
+        return;
+    }
 
+    if (day > 31)
+    {
+        std::cout << "B³êdny dzieñ (za du¿y)\n";
+        return;
+    }
+
+    if (day == 31 && (month == 2 || month == 4 || month == 6 || month == 9 || month == 11))
+    {
+        std::cout << "B³êdny dzieñ (za du¿y)\n";
+        return;
+    }
+
+    if (day > 29 && month == 2)
+    {
+        std::cout << "B³êdny dzieñ (za du¿y)\n";
+        return;
+    }
+
+    if (day == 29 && month == 2 && !(year % 4 == 0 && year % 100 != 0 || year % 400 == 0))
+    {
+        std::cout << "B³êdny dzieñ (za du¿y)\n";
+        return;
+    }
+
+    std::cout << "Data jest prawid³owa\n";
 }
 
 /*
@@ -318,27 +348,47 @@ void iftask7()
 
 /*
 17. Program sprawdzaj¹cy czy podana liczba jest liczb¹ pierwsz¹ (czyli tak¹, która dzieli siê tylko przez 1 i przez siebie sam¹) */
-void task17()
+void looptask1()
 {
-    int firstNumber;
+    int number;
+    std::cout << "Podaj liczbê\n";
+    std::cin >> number;
 
-    std::cout << "Podaj liczbê: ";
-    std::cin >> firstNumber;
+    //zak³adamy ¿e liczba jest pierwsza
+    int isPrime = 1;
 
-    if (firstNumber / 1 && firstNumber);
+    //algorytm sprawdzaj¹cy czy nie jest pierwsza
+    for (int i = 2; i < sqrt(number); i++)
+    {
+        if (number % i == 0)
+        {
+            isPrime = 0;
+            break;
+        }
+    }
+
+    if (isPrime == 1)
+    {
+        std::cout << "Liczba jest pierwsza\n";
+    }
+    else
+    {
+        std::cout << "Liczba nie jest pierwsza\n";
+    }
+
 }
 
 /*
 18. Program sprawdzaj¹cy czy podany ci¹g znaków jest palindromem (czyli takim, który czytany od ty³u jest taki sam, jak
 czytany od przodu, np. "kajak") */
-void task18()
+void looptask2()
 {
-
+     
 }
 
 /*
 19. Program sprawdzaj¹cy czy podane dwa s³owa s¹ anagramami (czyli takimi, które zawieraj¹ te same litery, ale w innym uk³adzie, np. "klasa" i "salka") */
-void task19()
+void looptask3()
 {
 
 }
@@ -346,32 +396,38 @@ void task19()
 /*
 20. Program sprawdzaj¹cy czy podana liczba jest liczb¹ doskona³¹ (czyli tak¹, której suma dzielników (z wy³¹czeniem samej siebie) jest równa danej liczbie, np. 6 jest liczb¹ doskona³¹, poniewa¿ 1 + 2 + 3 = 6).
 Pêtla for: */
-void task20()
+void looptask4()
 {
 
 }
 
 /*
 21. Program wyœwietlaj¹cy na ekranie kolejne liczby naturalne od 1 do 10 */
-void task21()
+void fortask1()
 {
 
 }
 
 /*
 22. Program obliczaj¹cy sumê liczb od 1 do 100 */
-void task22()
+void fortask2()
 {
 
 }
 
 /*
 23. Program wyœwietlaj¹cy na ekranie kwadraty liczb od 1 do 10 (np. 1, 4, 9, 16 itd.) */
-void task23()
+void fortask3()
 {
 
 }
 
+/*
+4. Program wyœwietlaj¹cy na ekranie silnie z liczb od 1 do 10 (np. 1!, 2!, 3!, 4!itd.) */
+void fortask4()
+{
+
+}
 
 int main()
 {
@@ -383,28 +439,22 @@ int main()
     //task4();
     //task5();
     //task6();
-    task7();
+    //task7();
     //task8();
     //task9(); 
-    //task10();
-    //task11();
-    //task12(); -
-    //task13();
-    //task14();
-    //task15(); -
-    //task16(); -
-    //task17(); 
-    //task18();
-    //task19();
-    //task20();
-    //task21();
-    //task22();
-    //task23();
-    //task24();
-    //task25();
-    //task26();
-    //task27();
-    //task28();
-    //task29();
-    //task30();
+    //iftask1();
+    //iftask2();
+    //iftask3(); -
+    //iftask4();
+    //iftask5();
+    //iftask6(); -
+    //iftask7(); -
+    //looptask1(); 
+    looptask2();
+    //looptask3();
+    //looptask4();
+    //fortask1();
+    //fortask2();
+    //fortask3();
+    //fortask4();
 }
