@@ -12,6 +12,24 @@ int convertCharsToInt(char firstChar, char secondChar)
 	return (firstChar - 48) * 10 + (secondChar - 48) * 1;
 }
 
+int corectYear(int month, int year)
+{
+	if (month >= 1 && month <= 12)
+		return 1900 + year;
+
+	if (month >= 21 && month <= 32)
+		return 2000 + year;
+
+	if (month >= 41 && month <= 52)
+		return 2100 + year;
+
+	if (month >= 61 && month <= 72)
+		return 2200 + year;
+
+	if (month >= 81 && month <= 92)
+		return 1800 + year;
+}
+
 std::string getPESEL()
 {
 	std::string stringPESEL;
@@ -73,6 +91,8 @@ bool checkPESELDay(std::string stringPESEL, std::string& errorMessage)
 {
 	int day = convertCharsToInt(stringPESEL[4], stringPESEL[5]);
 	int month = convertCharsToInt(stringPESEL[2], stringPESEL[3]);
+	int year = convertCharsToInt(stringPESEL[0], stringPESEL[1]);
+	year = corectYear(month, year);
 	errorMessage = "Dzień w numerze PESEl jest niepoprawny";
 	
 	if (day = 0 || day > 31)
