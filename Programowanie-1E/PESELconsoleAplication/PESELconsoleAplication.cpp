@@ -113,6 +113,31 @@ bool checkPESELDay(std::string stringPESEL, std::string& errorMessage)
 	return true;
 }
 
+bool checkPESELControlDigit(std::string stringPESEL, std::string& errorMessage)
+{
+	int d0 = convertCharsToInt('0', stringPESEL[0]);
+	int d1 = convertCharsToInt('0', stringPESEL[1]);
+	int d2 = convertCharsToInt('0', stringPESEL[2]);
+	int d3 = convertCharsToInt('0', stringPESEL[3]);
+	int d4 = convertCharsToInt('0', stringPESEL[4]);
+	int d5 = convertCharsToInt('0', stringPESEL[5]);
+	int d6 = convertCharsToInt('0', stringPESEL[6]);
+	int d7 = convertCharsToInt('0', stringPESEL[7]);
+	int d8 = convertCharsToInt('0', stringPESEL[8]);
+	int d9 = convertCharsToInt('0', stringPESEL[9]);
+	int d10 = convertCharsToInt('0', stringPESEL[10]);
+
+	int sum = d0 * 1 + d1 * 3 + d2 * 7 + d3 * 9
+	    	+ d4 * 1 + d5 * 3 + d6 * 7 + d7 * 9
+		    + d8 * 1 + d9 * 3 + d10 * 1;
+
+	if (sum % 10 == 0)
+		return true;
+
+	errorMessage = "Błędny PESEL - sprawdzanie liczby kontrolnej";
+		return false;
+}
+
 bool checkPESEL(std::string stringPESEL, std::string & errorMessage)
 {
 	if (checkPESELlength(stringPESEL, errorMessage) == false)
@@ -124,6 +149,13 @@ bool checkPESEL(std::string stringPESEL, std::string & errorMessage)
 	if (checkPESELMonth(stringPESEL, errorMessage) == false)
 		return false;
 
+	if (checkPESELDay(stringPESEL, errorMessage) == false)
+		return false;
+
+	if (checkPESELControlDigit(stringPESEL, errorMessage) == false)
+		return false;
+
+	return true;
 }
 
 int main()
