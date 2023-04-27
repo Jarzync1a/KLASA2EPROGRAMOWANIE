@@ -158,16 +158,33 @@ bool checkPESEL(std::string stringPESEL, std::string & errorMessage)
 	return true;
 }
 
+void showPESELInfo(std::string stringPESEL)
+{
+	int day = convertCharsToInt(stringPESEL[4], stringPESEL[5]);
+	int month = convertCharsToInt(stringPESEL[2], stringPESEL[3]);
+	int year = convertCharsToInt(stringPESEL[0], stringPESEL[1]);
+	year = corectYear(month, year);
+	month = month % 20;
+
+	std::cout << "Data urodzenia: " << day << "-" << month << "-" << year << "\n";
+
+	int gender = convertCharsToInt('0', stringPESEL[9]);
+	if (gender % 2 == 0)
+		std::cout << "Płeć żeźska\n";
+	else
+		std::cout << "Płeć męska\n";
+}
+
 int main()
 {
 	std::string stringPESEL = getPESEL();
 	std::string errorMessage = "";
 
-	std::string stringPESEL = getPESEL();
-
 	if (checkPESEL(stringPESEL, errorMessage) == true)
 	{
 		//pesel poprawny
+		std::cout << "Pesel poprawny\n";
+		showPESELInfo(stringPESEL);
 	}
 	else {
 		//pesel niepoprawny
