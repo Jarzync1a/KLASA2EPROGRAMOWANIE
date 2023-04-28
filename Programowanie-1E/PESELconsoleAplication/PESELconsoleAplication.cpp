@@ -82,7 +82,7 @@ bool checkPESELMonth(std::string stringPESEL, std::string& errorMessage)
 	if (monthV4 >= 1 && monthV4 <= 12)
 		return true;
 
-	errorMessage = "Miesiąć w numerze jest nie poprawny";
+	errorMessage = "Miesiąć w numerze PESEL jest nie poprawny";
 	return false;
 
 }
@@ -98,7 +98,7 @@ bool checkPESELDay(std::string stringPESEL, std::string& errorMessage)
 	if (day = 0 || day > 31)
 		return false;
 
-	if (day = 31 &&(month == 2, month == 4, month == 6, month == 9, month == 11))
+	if (day = 31 &&(month == 2 || month == 4 || month == 6 || month == 9 || month == 11))
 		return false;
 
 	if (month == 2 && day > 29)
