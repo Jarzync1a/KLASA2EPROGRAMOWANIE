@@ -23,6 +23,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04.Funkcje", "04.Funkcje", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PESELconsoleAplication", "PESELconsoleAplication\PESELconsoleAplication.vcxproj", "{823FF87E-57E7-4CFC-973A-7609F4CAA029}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05. Tabele", "05. Tabele", "{23B39872-8831-4379-8A26-D69885B2ADE1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TableConsoleApp", "TableConsoleApp\TableConsoleApp.vcxproj", "{29C8708A-5CC5-45AB-A90E-8AA34FFAF48A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -79,6 +83,14 @@ Global
 		{823FF87E-57E7-4CFC-973A-7609F4CAA029}.Release|x64.Build.0 = Release|x64
 		{823FF87E-57E7-4CFC-973A-7609F4CAA029}.Release|x86.ActiveCfg = Release|Win32
 		{823FF87E-57E7-4CFC-973A-7609F4CAA029}.Release|x86.Build.0 = Release|Win32
+		{29C8708A-5CC5-45AB-A90E-8AA34FFAF48A}.Debug|x64.ActiveCfg = Debug|x64
+		{29C8708A-5CC5-45AB-A90E-8AA34FFAF48A}.Debug|x64.Build.0 = Debug|x64
+		{29C8708A-5CC5-45AB-A90E-8AA34FFAF48A}.Debug|x86.ActiveCfg = Debug|Win32
+		{29C8708A-5CC5-45AB-A90E-8AA34FFAF48A}.Debug|x86.Build.0 = Debug|Win32
+		{29C8708A-5CC5-45AB-A90E-8AA34FFAF48A}.Release|x64.ActiveCfg = Release|x64
+		{29C8708A-5CC5-45AB-A90E-8AA34FFAF48A}.Release|x64.Build.0 = Release|x64
+		{29C8708A-5CC5-45AB-A90E-8AA34FFAF48A}.Release|x86.ActiveCfg = Release|Win32
+		{29C8708A-5CC5-45AB-A90E-8AA34FFAF48A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -90,6 +102,7 @@ Global
 		{558EAFEF-A0D6-48EE-BE06-5540C0FB40E6} = {940B405E-7F46-4D52-A1C2-CCFE5924800F}
 		{B2CA71E7-D17B-4CA4-942B-7C9674782CD1} = {64982CC1-7EF0-4B9B-A928-A20FEDF78D7E}
 		{823FF87E-57E7-4CFC-973A-7609F4CAA029} = {64982CC1-7EF0-4B9B-A928-A20FEDF78D7E}
+		{29C8708A-5CC5-45AB-A90E-8AA34FFAF48A} = {23B39872-8831-4379-8A26-D69885B2ADE1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E36200C7-7409-4082-9110-B2849E015B92}
