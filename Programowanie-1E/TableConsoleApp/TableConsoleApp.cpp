@@ -168,7 +168,33 @@ void task4()
 
 }
 
+//Napisz program/funkcje która dla tablicy z liczbami pseudolosowymi policzy średnią arytmetyczną tych liczb
+void task5()
+{
+	const int size = 5;
+	int tab[size];
+	float averageOfNumbers;
+	float sumOfNumbers = 0;
+
+	srand(time(NULL));
+	for (int i = 0; i < size; i++)
+	{
+		tab[i] = rand() % 10 + 1;
+		sumOfNumbers = sumOfNumbers + tab[i];
+	}
+	
+	averageOfNumbers = sumOfNumbers / size;
+	                                                            
+	for (int i = 0; i < size; i++)
+	{
+		std::cout << tab[i] << ", ";
+	}
+	std::cout << "\n" << "średnia = " << averageOfNumbers;
+
+	
+}
+
 int main()
 {
-	task4();
+	task5();
 }
