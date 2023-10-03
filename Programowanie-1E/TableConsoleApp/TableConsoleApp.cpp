@@ -264,15 +264,39 @@ void task7()
 // Napisz funkcje, która dla kolekcji danych liczbowych obliczy częstotliwość występowania danej liczby.
 void task8()
 {
-	
+	const int size = 5;
+	int tab[size];
+
+	srand(time(NULL));
+	for (int i = 0; i < size; i++)
+	{
+		tab[i] = rand() % 10 + 1;
+	}
+
 }
 
 // Napisz funkcję, która dla kolekcji danych liczbowych przeniesie te liczby do osobnych kolekcji liczb parzystych i nieparzystych.
 void task9()
 {
+	const int size = 5;
+	int tab[size];
 
+	srand(time(NULL));
+	for (int i = 0; i < size; i++)
+	{
+		tab[i] = rand() % 10 + 1;
+	}
+
+	for (int i = 0; i < size; i++)
+	{
+		if (tab[i] % 2 == 0) {
+			std::cout << "Ta liczba jest parzysta: " << tab[i] << "\n";
+		}
+		else
+			std::cout << "Ta liczba nie jest parzysta: " << tab[i] << "\n";
+	}
 }
 int main()
 {
-	task7();
+	task9();
 }
