@@ -271,12 +271,47 @@ void task8()
 	for (int i = 0; i < size; i++)
 	{
 		tab[i] = rand() % 10 + 1;
+		std::cout << tab[i] << ", ";
 	}
+
+	std::cout << "\n";
+
+	for (int i = 0, j = size, c = 0; i < 9; i++)
+	{
+		if (tab[j] == i)
+			c++;
+		else
+			i++;
+	}
+/*
+	for (int i = 0, j = 0; i < size; i++)
+	{
+		
+		std::cout << "ta liczba: " << tab[i] << " Powtarza sie: " << i << " razy\n";
+	}
+	*/
+}
+
+// Napisz funkcję, która dla kolekcji danych liczbowych znajdzie najdłuższy rosnący podciąg.
+void task9()
+{
+	const int size = 5;
+	int tab[size];
+
+	srand(time(NULL));
+	for (int i = 0; i < size; i++)
+	{
+		tab[i] = rand() % 10 + 1;
+		std::cout << tab[i] << ", ";
+	}
+
+	std::cout << "\n";
+
 
 }
 
 // Napisz funkcję, która dla kolekcji danych liczbowych przeniesie te liczby do osobnych kolekcji liczb parzystych i nieparzystych.
-void task9()
+void task10()
 {
 	const int size = 5;
 	int tab[size];
@@ -298,5 +333,5 @@ void task9()
 }
 int main()
 {
-	task9();
+	task8();
 }
