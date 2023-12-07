@@ -43,6 +43,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08. TicTacToe", "08. TicTac
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TicTacToeConsoleApplication", "TicTacToeConsoleApplication\TicTacToeConsoleApplication.vcxproj", "{6A2B50C2-1D8A-42B6-9D82-7B77B2497B48}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FunctionApp", "FunctionApp\FunctionApp.vcxproj", "{665F002F-F29C-43D3-BDC1-270DD904BC92}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -139,6 +141,14 @@ Global
 		{6A2B50C2-1D8A-42B6-9D82-7B77B2497B48}.Release|x64.Build.0 = Release|x64
 		{6A2B50C2-1D8A-42B6-9D82-7B77B2497B48}.Release|x86.ActiveCfg = Release|Win32
 		{6A2B50C2-1D8A-42B6-9D82-7B77B2497B48}.Release|x86.Build.0 = Release|Win32
+		{665F002F-F29C-43D3-BDC1-270DD904BC92}.Debug|x64.ActiveCfg = Debug|x64
+		{665F002F-F29C-43D3-BDC1-270DD904BC92}.Debug|x64.Build.0 = Debug|x64
+		{665F002F-F29C-43D3-BDC1-270DD904BC92}.Debug|x86.ActiveCfg = Debug|Win32
+		{665F002F-F29C-43D3-BDC1-270DD904BC92}.Debug|x86.Build.0 = Debug|Win32
+		{665F002F-F29C-43D3-BDC1-270DD904BC92}.Release|x64.ActiveCfg = Release|x64
+		{665F002F-F29C-43D3-BDC1-270DD904BC92}.Release|x64.Build.0 = Release|x64
+		{665F002F-F29C-43D3-BDC1-270DD904BC92}.Release|x86.ActiveCfg = Release|Win32
+		{665F002F-F29C-43D3-BDC1-270DD904BC92}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -155,6 +165,7 @@ Global
 		{F6F2A990-6A04-4597-AA85-7736D81CF462} = {F46E5F5E-F1C2-4344-A9EE-A68BAEEF715D}
 		{AC22D7F3-4C86-41EC-AC04-D035F5723C3C} = {F24A3CA7-AFC9-461A-BD6E-8691F913D69E}
 		{6A2B50C2-1D8A-42B6-9D82-7B77B2497B48} = {2AB24882-D012-48A7-A61E-4B09A5D555DC}
+		{665F002F-F29C-43D3-BDC1-270DD904BC92} = {43423085-49E3-492A-B2CC-D98D918D325E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E36200C7-7409-4082-9110-B2849E015B92}
