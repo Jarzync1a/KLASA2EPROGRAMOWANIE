@@ -2,7 +2,7 @@
 
 class Person
 {
-private:
+private: 
 	std::string name;
 	//std::string secondName;
 	std::string surname;
@@ -22,14 +22,27 @@ public:
 	{
 		return age >= 18;
 	}
+
+	void setAge(short a)
+	{
+		if (a > 0 && a < 130)
+		{
+			age = a;
+		}
+		else
+		{
+			std::cout << "B³edna wartosc\n";
+		}
+	}
 };
 
 int main()
 {
 	Person firstPerson;
-	firstPerson.name = "Jan";
-	firstPerson.surname = "Kowalski";
-	firstPerson.age = 5;
+	//firstPerson.name = "Jan";
+	//firstPerson.surname = "Kowalski";
+	//firstPerson.age = 5;
+	firstPerson.setAge(500);
 
 	firstPerson.showInfo();
 
