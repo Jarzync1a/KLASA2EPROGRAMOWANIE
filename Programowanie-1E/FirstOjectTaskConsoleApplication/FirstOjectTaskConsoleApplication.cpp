@@ -1,6 +1,7 @@
 #include <iostream>
 
 /*
+ZADANIE 1
 Zdefiniuj klase opisuj¹cy punkt na przestrzeni kartezjañskiej. Mo¿liwoœci klasy:
 * konstruktory
 * metoda która zwórci odleg³oœæ tego punktu od poczatku uk³adu wspó³rzednych
@@ -12,13 +13,36 @@ Napisz program który zaprezentuje mo¿liwoœci obiektu na podstawie tej klasy.
 
 */
 
+/*
+* ZADANIE 2
+Zdefiniuj klase opisuj¹ce konto bankowe. Mo¿liwoœci klasy:
+* konstruktory
+* metoda która dokona wp³aty na konto
+* metoda która wyp³aty z konta
+* metoda która wykona przelew na inne konto
+* metodê która poka¿e informacje o koncie.
+
+Napisz program który zaprezentuje mo¿liwoœci obiektu na podstawie tej klasy.
+*/
+
+/*
+ZADANIE 3
+Zdefiniuj klase opisuj¹c¹ prostok¹t. Mo¿liwoœci klasy:
+* konstruktory
+* metoda która zwórci obwód prostok¹ta
+* metoda która pole prostok¹ta
+* metodê która poka¿e informacje o prostok¹cie.
+
+Napisz program który zaprezentuje mo¿liwoœci obiektu na podstawie tej klasy.
+*/
+
 class Point2D
 {
 private:
-	double x;
+	double x; 
 	double y;
 
-public:
+public:	
 	Point2D()
 	{
 		x = 10;
@@ -27,16 +51,7 @@ public:
 
 	Point2D(double xx)
 	{
-		x = xx;
-		y = 6;
-	}
-
-	Point2D(double xx, double yy)
-	{
-		x = xx;
-		y = yy;
-	}
-
+		x = xx; 
 	double DistanceFromCenter(Point2D SecondPoint)
 	{
 		double distance = sqrt(x * x + y * y);
