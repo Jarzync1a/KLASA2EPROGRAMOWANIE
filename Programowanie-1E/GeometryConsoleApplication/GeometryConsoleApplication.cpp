@@ -1,6 +1,8 @@
 ﻿// GeometryConsoleApplication.cpp 
 #include <iostream>
 
+
+
 //Kwadrat, trapez, prostokąt
 
 class Quadrangle //ang. czworokąt
@@ -68,7 +70,7 @@ public:
 	}
 };
 
-int main()
+/*int main()
 {
 	Rectangle r(1, 2);
 	std::cout << "Obwód prostokąta: " << r.GetPerimeter() << "\n";
@@ -81,4 +83,57 @@ int main()
 	Square s(5);
 	std::cout << "Obwód kwadratu: " << s.GetPerimeter() << "\n";
 	std::cout << "Pole kwadratu: " << s.GetArea() << "\n";
+}*/
+
+/*
+* Dla poniższych klas ułóż drzewko dziedziczenia.
+																	Animal (Zwierzę)
+		Mammal (Ssak)									Reptile (Gad)					Fish (Ryba)								Bird (Ptak)
+Dog (Pies)			Cat (Kot)					Snake (Wąż)		Turtle (Żółw)		Trout (Pstrąg)  Salmon (Łosoś)		Eagle (Orzeł)  Sparrow (Wróbel)
+			Tiger (Tygrys)  Lion (Lew)
+
+															Vehicle (Pojazd)
+		Car (Samochód)										Truck (Ciężarówka)						Motorcycle (Motocykl)
+Sedan (Sedan)	SUV (SUV)	Pickup Truck (Pick-up)			Semi-Truck (Ciągnik siodłowy)
+
+
+
+																		Electronic Device (Urządzenie elektroniczne)
+				Television (Telewizor)														Smartphone (Smartfon)				Laptop (Laptop)
+Smart TV (Telewizor Smart)	LED TV (Telewizor LED)		Android Phone (Telefon z systemem Android)	iPhone (iPhone)
+
+
+*/
+
+
+class MyClass
+{
+public:
+
+private:
+
+};
+
+class MyClass
+{
+public:
+
+
+private:
+
+};
+
+class MyClass
+{
+public:
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+
+private:
+
+};
+  
+
+int main()
+{
+
 }
